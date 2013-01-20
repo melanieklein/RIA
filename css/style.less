@@ -1,0 +1,578 @@
+/************************************************
+/* RESET MEYER
+************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/************************************************
+/* FIN RESET MEYER
+************************************************/
+
+@font-face {
+  font-family: 'ResagnictoRegular';
+  src: url('../fonts/Resagnicto-webfont.eot');
+  src: url('../fonts/Resagnicto-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Resagnicto-webfont.woff') format('woff'), url('../fonts/Resagnicto-webfont.ttf') format('truetype'), url('../fonts/Resagnicto-webfont.svg#ResagnictoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ResagnictoItalic';
+  src: url('../fonts/ResagnictoItalic-webfont.eot');
+  src: url('../fonts/ResagnictoItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ResagnictoItalic-webfont.woff') format('woff'), url('../fonts/ResagnictoItalic-webfont.ttf') format('truetype'), url('../fonts/ResagnictoItalic-webfont.svg#ResagnictoItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ResagnictoBold';
+  src: url('../fonts/ResagnictoBold-webfont.eot');
+  src: url('../fonts/ResagnictoBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ResagnictoBold-webfont.woff') format('woff'), url('../fonts/ResagnictoBold-webfont.ttf') format('truetype'), url('../fonts/ResagnictoBold-webfont.svg#ResagnictoBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@rouge: #B92B35;
+@blanc: #FFEDEE;
+@noir: #000000;
+@gris: #e2e2e2;
+
+@ResagnictoR: 'ResagnictoRegular';
+@ResagnictoI: 'ResagnictoItalic';
+@ResagnictoB: 'ResagnictoBold';
+
+@media screen and (min-width: 100px) and (max-width: 599px) {
+
+/*- - - -  - - - - -STYLE GENERAL- - - -  - - - - -*/
+
+body {
+    font-size: 16px;
+    font-family: @ResagnictoR;
+    color: #ffedee;
+    background-image: url('../img/motif.png');
+    line-height: 1.4em;
+    letter-spacing: 0.07em;
+
+    div:first-child
+    {
+      min-width: 100px;
+      max-width: 599px;
+    }
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.4em;
+    letter-spacing: 0em;
+  }
+  input {
+    background-color: @blanc;
+    border-radius: 10px;
+    height: 1.8em;
+    font-size: 1em;
+    font-family: @ResagnictoR;
+    margin-bottom: 0.8em;
+    width: 15.5em;
+    -moz-box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.75);
+    padding-left: 0.4em;
+  }
+  button {
+    background-color: @blanc;
+    height: 2em;
+    color: @noir;
+    font-family: @ResagnictoB;
+    font-size: 1.12em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    float: right;
+    margin-top: 1em;
+  }
+  button:hover,
+  button:active {
+    color: @blanc;
+    background-color: #cd7b81;
+  }
+  form {
+    background-color: @rouge;
+    width: 16.2em;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 1em;
+    padding-bottom: 4.5em;
+    -moz-box-shadow: 0px 4px 9px black;
+    -o-box-shadow: 0px 4px 9px black;
+    -ms-box-shadow: 0px 4px 9px black;
+    -webkit-box-shadow: 0px 4px 9px black;
+  }
+  form p {
+    font-family: @ResagnictoB;
+    margin-bottom:1.5em;
+  }
+  .content {
+    width: 18.5em;
+    margin: 0 auto;
+  }
+
+#triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 22px solid @blanc;
+    position: relative;
+    top: 4.7em;
+    right: -7.2em;
+  }
+
+#triangle3 {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 23px solid transparent;
+    border-top: 16px solid @gris;
+    position: relative;
+    top: -1.8em;
+    right: -10.8em;
+  }
+
+  #resetBulle, .deleteBulle {
+  position: absolute;
+  background-color: @blanc;
+  width: 10.2em;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 1em;
+  padding-bottom: 4.5em;
+  -moz-box-shadow: 0px 1px 4px black;
+  -o-box-shadow: 0px 1px 4px black;
+  -ms-box-shadow: 0px 1px 4px black;
+-webkit-box-shadow: 0px 1px 4px black;
+  padding-bottom: 1em;
+  top: -8em;
+right: 5em;
+letter-spacing: 0.02em;
+  p {
+    font-size: 0.8em;
+    color: @rouge;
+  }
+  span {
+    font-family: @ResagnictoB;
+  }
+  button {
+    background-color: @rouge;
+    color: @blanc;
+    font-family: @ResagnictoB;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    margin-top: 1em;
+    &:hover,&:active {
+      color: @rouge;
+      background-color: @blanc;
+    }
+
+  }
+}
+#oui {
+  float: left;
+}
+
+.deleteBulle {
+top: 1em;
+right: 4em;
+background-color: @gris;
+}
+
+.oui2 {
+  float: left;
+}
+
+/*- - - -  - - - - -HEADER- - - -  - - - - -*/
+
+  header {
+    background-color: @gris;
+    height: 4em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+  }
+  header img {
+    float: left;
+    width: 9em;
+  }
+
+/*- - - -  - - - - -FOOTER- - - -  - - - - -*/
+  footer {
+    background-color: @gris;
+    padding: 0.5em;
+    margin-top: 2em;
+    clear: both;
+    position: relative;
+  }
+
+/*- - - -  - - - - -ACCUEIL- - - -  - - - - -*/
+
+  #logoAccueil {
+    width: 17.6em;
+    margin: 0 auto;
+    margin: 2em 0 1.5em 0;
+  }
+
+#accueil {
+
+  div {
+    background-color: #B92B35;
+    width: 16.2em;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 1em;
+    padding-bottom: 4.5em;
+    -moz-box-shadow: 0px 4px 9px black;
+    -o-box-shadow: 0px 4px 9px black;
+    -ms-box-shadow: 0px 4px 9px black;
+    -webkit-box-shadow: 0px 4px 9px black;
+    padding-bottom: 1em;
+
+  }
+  p {
+    line-height: 1.1em;
+    text-align: center;
+  }
+  button {
+    float:none;
+    width: 10.7em;
+    font-size: 1.5em;
+  }
+  }
+
+  #triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 33px solid @rouge;
+    position: relative;
+    top: -1.9em;
+    right: -0.5em;
+  }
+
+/*- - - -  - - - - -AJOUT SERIE- - - -  - - - - -*/
+
+#ajoutSeries {
+    >div {
+      margin-top: 1.5em;
+    }
+
+    h3 {
+      color: @rouge;
+      font-family: @ResagnictoB;
+    }
+}
+
+.resultats {
+    li {
+    color: black;
+    padding: 1em 0 2.5em 0;
+    font-size: 0.9em;
+    border-bottom: 1px solid @gris;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 0.8em;
+  }
+
+  button {
+    margin-top: 0;
+    font-size: 1.1em;
+    height: 1.5em;
+  }
+}
+
+/*- - - -  - - - - -SERIES- - - -  - - - - -*/
+
+#mesSeries {
+	margin-bottom: 1em;
+
+  #nbreSeries {
+    background-color: @gris;
+    padding: 0.3em;
+    font-size: 0.75em;
+    position: absolute;
+    top: 9.75em;
+    text-align: center;
+    padding: 0.7em 0.3em 0.7em 0.3em;
+    -moz-transform:rotate(-15deg); 
+    -webkit-transform:rotate(-15deg); 
+    -o-transform:rotate(-15deg); 
+    -ms-transform:rotate(-15deg);
+    em {
+      font-size: 2.5em;
+      display: block;
+    }
+  }
+}
+
+
+
+#boutons {
+  height: 3.3em;
+  margin: 0.3em 0 0.3em 0;
+  margin: 0 auto;
+  width: 17.3em;
+  span {
+    box-shadow: 1px 4px 7px @rouge;
+    border-radius: 40px;
+    height: 2.8em;
+    width: 2.8em;
+    &:hover,&:active {
+      box-shadow: 1px 4px 7px @noir;
+    }
+  }
+}
+
+.bouton {
+  float: left;
+  width: 3.8em;
+  margin: 0 1em 0 1em;
+  cursor: pointer;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+#listeSeries {
+  h2 {
+  font-size: 1.2em;
+  text-align: center;
+  font-family: @ResagnictoB;
+  color: @rouge;
+  }
+  .delete {
+    box-shadow: 1px 2px 4px @rouge;
+    border-radius: 40px;
+    height: 2.3em;
+    width: 2.3em;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    bottom: -1.2em;
+    right: -0.5em;
+    &:hover,&:active {
+      box-shadow: 1px 2px 4px @noir;
+    }
+  }
+
+  .voirDetails {
+      background-color: @rouge;
+      color: @blanc;
+      font-family: @ResagnictoB;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+      -o-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+      -ms-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+      width: 16.7em;
+      text-transform: none;
+      text-align: center;
+      padding: 0.3em;
+      margin: 0.5em 0 0.6em 0;
+      text-transform: none;
+
+      &:hover,&:active {
+        color: @rouge;
+        background-color: @gris;
+      }
+}
+
+.detailsSerie {
+   overflow: visible !important;
+   margin-top: 0.6em;
+  span {
+    text-transform: none;
+    float:none;
+    display: block;
+    font-family: @ResagnictoI;
+  }
+  .moinsDetails {
+      background-color: @rouge;
+      color: @blanc;
+      font-family: @ResagnictoB;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+      -o-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+      -ms-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+      width: 16.7em;
+      text-transform: none;
+      text-align: center;
+      padding: 0.3em;
+      margin: 0.5em 0 0.6em 0;
+      text-transform: none;
+
+      &:hover,&:active {
+        color: @rouge;
+        background-color: @gris;
+      }
+    }
+
+}
+}
+
+.descSerie {
+  color: black;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  margin: 0.5em 0 1em 0;
+}
+
+.genreSerie,.dureeEpi {
+  line-height: 1.3em;
+letter-spacing: 0em;
+}
+
+
+/*- - - -  - - - - -PLANNING- - - -  - - - - -*/
+
+.grandTitre {
+  font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: @ResagnictoB;
+    background-color: @rouge;
+    border-radius: 3px 3px 0px 0px;
+    padding: 1em 0 1em 0;
+}
+
+#planning {
+  span {
+    font-size: 1em;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  h4 {
+    text-align: center;
+  }
+
+  li {
+  padding-top: 1em;
+  }
+}
+
+.conteneur {
+     -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -webkit-border-radius: 10px;
+       -moz-box-shadow: 0px 4px 9px black;
+    -o-box-shadow: 0px 4px 9px black;
+    -ms-box-shadow: 0px 4px 9px black;
+    -webkit-box-shadow: 0px 4px 9px black;
+    border: 5px solid #B92B35;
+
+    li {
+      background-color: @blanc;
+      border: 2px solid @rouge;
+      padding: 0em 1em 3em 1em;
+      position:relative;
+      a {
+        color: @rouge;
+        &:hover,&:active {
+          color: @noir;
+        }
+      }
+    }
+    span {      
+      font-family: @ResagnictoB;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      float:left;
+      color: @rouge;
+    }
+    h3 {
+      clear:both;
+      font-family: @ResagnictoB;
+      color: @noir;
+
+    }
+
+    h4 {
+      font-family: @ResagnictoI;
+      font-size: 0.9em;
+      color: @noir;
+    }
+  }
+
+}

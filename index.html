@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Me, myself and series</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+	<div>
+		<header>
+			<a href="index.html"><img id="logo" src="img/logo.png" alt="" width="143" height="53"></a>
+		</header>
+		<div class="content">
+			<div id="accueil">
+				<a href="index.html"><img id="logoAccueil" src="img/logo.png" alt="" width="282" height="103"></a>
+				<span id="triangle"></span>
+				<div>
+					<p>Hey&nbsp;! Toi aussi tu passes ton temps affalé devant des séries au lieu de bosser/dormir/manger&nbsp;?</p>
+					<button type="button">Rejoins-nous&nbsp;!</button>
+				</div>
+			</div>
+			<div id="ajoutSeries">
+				<form action="#" method="get" id="searchForm">
+					<p>Ajoute des séries à ton compte&nbsp;!</p>
+					<label for="serie">Tu es accro à&nbsp;:</label>
+					<input type="text" id="serie">
+					<button type="submit" id="searchSerie">Valider</button>
+				</form>
+				<div>	
+				<h3>Résultats&nbsp;:</h3>
+				<ul class="resultats">
+				</ul>
+				</div>
+			</div>
+			<div id="mesSeries" class="conteneur">
+					<span id='nbreSeries'><em></em> série(s)</span>
+					<h1 class="grandTitre">Mes séries</h1>
+					<ul id="listeSeries">
+					</ul>
+			</div>
+			<div id="detailsSerie" class="conteneur">
+				
+			</div>
+			<div id="planning" class="conteneur">
+					<h1 class="grandTitre">Mon Planning</h1>
+					<ul>
+
+					</ul>
+			</div>
+		</div>
+		<footer>
+			<div id="boutons">				
+				<span class="bouton" id="menuMesSeries"><img class="retina" src="img/series.png" width="91" height="91" alt="Lien vers les séries" ></span>
+				<span class="bouton" id="menuPlanning"><img class="retina" src="img/planning.png" width="91" height="91" alt="Lien vers le planning" ></span>
+				<span class="bouton" id="menuAjoutSerie"><img class="retina" src="img/ajoutSerie.png" height="106" width="108" alt="Bouton d'ajout d'une série"></span>		
+				<span class="bouton" id="reset"><img class="retina" src="img/reset.png" width="91" height="91" alt="Clear le localStorage" ></span>			
+			</div>
+			<div id="resetBulle">
+				<p>Tu veux vraiment <span>tout</span> supprimer&nbsp;?!</p>
+				<button id="oui">Oui</button>
+				<button id="non">Non</button>
+				<span id="triangle2"></span>
+			</div>			
+		</footer>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="js/modernizr.js"></script>-->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
