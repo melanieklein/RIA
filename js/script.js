@@ -43,6 +43,8 @@
         var displayResults = function ( e ) {
             //Empeche le comportement par défaut (=recharger la page)
             e.preventDefault();
+            //Descend dans la page pour afficher les résultats
+            $('html,body').animate({scrollTop:310}, 'slow');
             //Définit une variable pour la valeur de recherche entrée dans l'input
             var $search = $('#serie').val();
             //Si une série a été cherchée et que le texte entré a plus de deux caractères            
